@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scratch-AC1</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="header">
+      <img src="./logo/Logo.png" width="5%" class="img-responsive logo1" />
+
+      <img src="./logo/header.png" class="img-responsive logo2" />
+      <button class="toggle-sidenav" onclick="toggleSidenav()">☰</button>
+      <!-- Toggle Button -->
+    </div>
+
+    <div class="container">
+      <!-- Left Side Navigation -->
+      <div class="sidenav">
+        <button onclick="showContent('sprite')">
+            SPRITE
+        </button>
+        <button onclick="showContent('changing-costume')">
+            CHANGING COSTUME OF THE SPRITE
+        </button>
+        <button onclick="showContent('repeat')">
+            REPEAT
+        </button>
+    </div>
+    
+
+      <!-- Right Side Content -->
+      <div class="content">
+     <!-- SPRITE -->
+<div id="sprite" class="content-section" style="display: none;">
+  <h2>SPRITE</h2>
+  <div style="display: flex; gap: 1rem">
+      <p>
+          A <b>sprite</b> is an object or character in Scratch that can be programmed to perform actions based on scripts in a project using blocks. <br>
+          <br> Each sprite has scripts that function and run independently, and they can communicate with each other through broadcasts, variables, or sensing blocks.
+      </p>
+      <img src="./assets/girl-pointing.png" alt="Sprite Image" width="32%" />
+  </div>
+</div>
+
+<!-- CHANGING COSTUME OF THE SPRITE -->
+<div id="changing-costume" class="content-section" style="display: none;">
+    <h2 style="color: #1230ae; font-weight: bold;">CHANGING COSTUME OF THE SPRITE</h2>
+    
+    <p style="font-size: 1.4rem;">
+        The look of a sprite can be changed by using <strong style="color: #ff5733;">costumes</strong>. <br>It’s like your sprite with different clothes/poses. 
+        <br><br>
+        When you create a new project in Scratch, by default, you get the Cat as the sprite. 
+        <br><br>
+        You can go to the <strong style="color: #1230ae;">costumes tab</strong> and see the looks of a sprite.
+        <br> <br>
+        <img src="./assets/images/image9.png" alt="image-scratch" width="60%" />
+        <br><br>
+        Here you can see the cat sprite has <strong style="color: #ff5733;">2 costumes</strong> <br>
+        <br>Each costume has a name :<br>
+        <strong>costume1</strong> and <strong>costume2</strong> as the two looks of the sprite.
+        <br><br>
+        <img src="./assets/images/image3.png" alt="image-scratch" width="60%" />
+        <br><br>
+        Now that we have seen the costumes of the sprite, let’s try to change the costume when you press the <strong style="color: #ff5733;">space key</strong>.
+        <br>
+        Do you know how to do that?🤔
+        <br> <br>
+        1. Select <strong>“when space key is pressed”</strong> block from events.
+        <br>
+        2. Select <strong>“switch costume to”</strong> block from looks.
+        <br>        <img src="./assets/images/image8.png" alt="image-scratch" width="80%" />
+
+        <br><br>
+        Here you can see how the costume changes when you press the space key.
+        <br><br>
+        If you wish to keep alternating between the costumes, you can select the <strong>“next costume”</strong> block.
+        <br> <br>
+        <img src="./assets/images/image14.png" alt="image-scratch" width="80%" />
+
+    </p>
+</div>
+
+<!-- REPEAT -->
+<div id="repeat" class="content-section" style="display: none;">
+  <h2 style="color: #1230ae; font-weight: bold;">REPEAT</h2>
+  
+  <p style="font-size: 1.4rem;">
+      Let’s say you want to show the sprite moving, then you need to keep changing the costumes multiple times. 
+      <br> <br>
+      <img src="./assets/images/image15.png" alt="image-scratch" width="80%" />
+
+      <br><br>
+      But here, the change is too fast.
+      <br><br>
+      So, we can add a <strong style="color: #ff5733;">“wait” block</strong>. 
+      <br><br>
+      The wait block waits before it executes the other command. The number we mention here is the number of seconds to wait before executing other instructions.
+      <br>   <br>     <img src="./assets/images/image1.png" alt="image-scratch" width="80%" />
+
+      <br><br>
+      If you want to repeat something, we can use the <strong style="color: #1230ae;">“repeat” block</strong> from control.
+      <br> <br>       <img src="./assets/images/image19.png" alt="image-scratch" width="80%" />
+
+      <br><br>
+      You can mention the number of times you want a task to be repeated.
+      <br><br>
+      Let’s add the <strong>“next costume”</strong> and <strong>“wait”</strong> blocks inside the <strong>“repeat”</strong> block.
+      <br>    <br>    <img src="./assets/images/image16.png" alt="image-scratch" width="80%" />
+
+  </p>
+</div>
+
+
+        
+      </div>
+
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
